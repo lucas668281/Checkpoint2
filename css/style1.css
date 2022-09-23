@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 85px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    
+
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar-nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: black;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.navbar-nav a:hover {
+    color: blue;
+    font-size: 1.3em;
+    background-color: rgba(66, 133, 178, 0.637);
+    
+}
+
+
+
+/* até aqui header  */
+body {
+    background-color: rgb(224, 219, 219);
+}
+
+
+main {
+    height: auto;
+    margin-top: 55px
+}
+
+.mid {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/11.jpg);
+  
+  
+}
+
+.cardapio-bt {
+    display: flex;
+    justify-content: center;
+}
+
+.cardapio-bt button {
+    
+    border-radius: 10px;
+    height: 40px;
+    background-color:  rgba(140, 134, 134, 0.551);
+    border: none;
+
+    
+}
+.cardapio-bt a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.cardapio-bt a:hover {
+    color: blue;
+    font-size: 1.5em;
+    background-color: rgba(66, 133, 178, 0.637);
+}
+
+
+.mid-texto h1 {
+    font-size: 30px;
+}
+
+.mid-texto {
+    margin-top: 10px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    
+    
+}
+
+.cardapio {
+    margin: 10px;
+}
+
+.mid-cardapio {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.mid-burgues {
+    background-color: rgba(140, 134, 134, 0.157);
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 250px;
+    
+}
+
+.mid-burgues {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.mid-burgues:hover {
+    color: blue;
+    font-size: 1.1em;
+
+}
+
+.mid-burgues img {
+    width: 100%;
+    height: 230px;
+    border-radius: 10px 10px 0 0px;
+   
+}
+
+.mid-burgues h3 {
+    padding: 10px;
+}
+
+.mid-burgues p {
+    padding: 10px;
+    justify-content: center;
+    
+}
+
+.teste-add {
+    display: flex;
+
+}
+.teste-add button a {
+    color: black;
+    text-decoration: none;
+}
+
+.teste-add button a:hover {
+    color: blue;
+}
+
+.mid-burgues button {
+    padding: 3px;
+    margin: 10px;
+    justify-content: center;
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+}
+
+
+button:hover {
+    color: blue;
+    
+    font-size: 1.2em;
+}
+
+/* daqui */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100%;
+    padding: 10px 10px 0 10px;
+    max-width: 100vw;
+  
+}
+
+.aluno {   
+    display: flex;
+    padding-bottom: 10px; 
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.logos {
+    width: 25px;
+}
+
+.link {
+    color: black;
+    margin-right: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+footer div h1{
+    font-size: 20px;  
+    justify-content: center;
+}
+
+
+
+.social {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.social a{
+    padding:5px 0 5px 0;
+}
+
+.social a:hover {
+    background-color: rgba(66, 133, 179, 0.637);
+}
+
+.data {
+    background-color: white;
+}
+
+.datadesenvolvimento {
+    text-align: center;
+    margin-bottom: 0;
+    
+}
+/* até aqui footer */
+
+@media (max-width:768px) {
+    .header {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    a {
+        margin-right: 10px;
+    }
+    .mid {
+        height: 50vh;
+    }
+   
+}
+
+@media (min-width: 1360px ){
+    .mid-burgues {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 100px 50px 100px;
+        }
+
+        footer {
+            flex-direction: row;
+         justify-content: space-around;
+    
+        }
+        footer p {
+            display: flex;
+        }
+        .datadesenvolvimento {
+            display: block;
+        }
+}
